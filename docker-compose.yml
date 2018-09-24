@@ -1,0 +1,10 @@
+version: '3'
+services:
+  example-logger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: 
+      configSiteURL: http://google.com
+      configTimeout: 1000
+      configRetry: 2
